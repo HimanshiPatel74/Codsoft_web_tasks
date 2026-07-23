@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>To-Do List</h1>
+
+        <!-- Add Task -->
+
+        <div class="input-box">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task">
+
+            <select id="priority">
+                <option value="High">🔴 High</option>
+                <option value="Medium">🟡 Medium</option>
+                <option value="Low">🟢 Low</option>
+            </select>
+
+            <button id="addBtn">
+                Add
+            </button>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input type="text" id="searchInput"  placeholder="Search task">
+        </div>
+
+        <!-- Filter -->
+
+        <div class="filter">
+
+            <button id="allBtn">All</button>
+
+            <button id="completedBtn">
+                Completed
+            </button>
+
+            <button id="pendingBtn">
+                Pending
+            </button>
+
+        </div>
+        <div class="filter">
+   
+</div>
+       <div class="clear-section">
+        <button id="clearBtn">🗑 Clear All</button>
+</div>
+
+
+        <!-- Counter -->
+    <div class="counter">
+        <div class="card completed-card">
+        <h3>Completed</h3>
+        <span id="completedCount">0</span>
+    </div>
+
+    <div class="card pending-card">
+        <h3>Pending</h3>
+        <span id="pendingCount">0</span>
+    </div>
+
+</div>
+    <div>
+        <!-- Task List -->
+         <ul id="taskList">
+
+         </ul>
+
+         <p id="emptyMessage">
+    📝 No tasks yet. Add your first task!
+</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
